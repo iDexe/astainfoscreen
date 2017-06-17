@@ -9,19 +9,22 @@ local font = resource.load_font("OpenSans-Regular.ttf")
 
 
 function wrap(str, limit, indent, indent1)
-    limit = limit or 72
-    local here = 1
-    local wrapped = str:gsub("(%s+)()(%S+)()", function(sp, st, word, fi)
-        if fi-here > limit then
-            here = st
-            return "\n"..word
-        end
-    end)
-    local splitted = {}
-    for token in string.gmatch(wrapped, "[^\n]+") do
-        splitted[#splitted + 1] = token
-    end
-    return splitted
+  indent = indent or ""
+  indent1 = indent1 or indent
+  limit = limit or 72
+  local here = 1-#indent1
+  outstring = indent1..str:gsub("(%s+)()(%S+)()",
+                          function(sp, st, word, fi)
+                            if fi-here > limit then
+                              here = st - #indent
+                              return "\n"..indent..word
+                            end
+                          end)
+  outlist = {}
+  for line in outstring:gmatch("[^\r\n]+") do 
+  	table.insert(outlist, line)
+   end
+  return outlist
 end
 
 
