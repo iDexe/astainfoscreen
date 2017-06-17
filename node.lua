@@ -40,7 +40,7 @@ function node.render()
     	font:write(20, 96 * (1+idx), meal.name, 32, 1,1,1,1)
     	--font:write(20, 96 * (1+idx) + 32, wrap(meal.name,35)[1], 32, 1,1,1,1)
     	for idx2, line in meal.name:gmatch("[^\r\n]+") do
-    		font:write(20, 96 * (1+idx) + 32 * (1+idx2), line, 32, 1,1,1,1)
+    		font:write(20, 96 * (1+idx) + 32 * (1+idx2), "yolo", 32, 1,1,1,1)
     	end
     end
 end
