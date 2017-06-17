@@ -40,6 +40,6 @@ function node.render()
     font:write(20, 20, "Mensaplan", 128, 1,1,1,1)
     for idx, meal in ipairs(meals) do
     	font:write(20, 80 * (1+idx), meal.name, 32, 1,1,1,1)
-    	font:write(20, 80 * (1+idx) + 40, wrap(meal.name,35)[0], 32, 1,1,1,1)
+    	font:write(20, 80 * (1+idx) + 40, wrap(meal.name,35)[1], 32, 1,1,1,1)
     end
 end
