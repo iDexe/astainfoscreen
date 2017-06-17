@@ -25,10 +25,11 @@ function wrap(str, limit, indent, indent1)
 end
 
 
+
+
 util.file_watch("NextdayMeals.json", function(content)
 	meals = json.decode(content)
 	for idx, meal in ipairs(meals) do
-		meal.lines = wrap(meal.name, 35)
 
 
 	end
@@ -37,12 +38,8 @@ end)
 
 function node.render()
     gl.clear(0,0,0,1)
-    font:write(20, 20, "Mensaplan", 64, 1,1,1,1)
-    local vertTextpos = 0
+    font:write(20, 20, "Mensaplan", 128, 1,1,1,1)
     for idx, meal in ipairs(meals) do
-    	for idx2, line in ipairs(meal)
-    		vertTextpos = vertTextpos + idx*64 + idx2*64
-    		font:write(20, vertTextpos, meal.lines, 64, 1,1,1,1)
-    	
+    	font:write(20, 64 * (1+idx), meal.name, 64, 1,1,1,1)
     end
 end
