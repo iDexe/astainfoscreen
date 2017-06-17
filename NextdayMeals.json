@@ -1,0 +1,184 @@
+[
+    {
+        "id": 2683052,
+        "name": "Milchreis, heiße Kirschen, Zimt und Zucker",
+        "category": "Eintopf",
+        "prices": {
+            "students": 1.35,
+            "employees": 2.9,
+            "pupils": null,
+            "others": 3.9
+        },
+        "notes": [
+            "Milch und Milcherzeugnisse",
+            "Natürlich frisch",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683053,
+        "name": "Pesto-Burger: Pesto Rosso, Barbecuesauce, American Wedges, Gurkensalat",
+        "category": "Tellergericht",
+        "prices": {
+            "students": 1.85,
+            "employees": 3.6,
+            "pupils": null,
+            "others": 4.4
+        },
+        "notes": [
+            "Sesamsamen und Sesamsamenerzeugnisse",
+            "Milch und Milcherzeugnisse",
+            "Soja und Sojaerzeugnisse",
+            "Glutenhaltiges Getreide",
+            "mit Knoblauch",
+            "Natürlich frisch",
+            "Rindfleisch"
+        ]
+    },
+    {
+        "id": 2683054,
+        "name": "Holzfällersteak mit Schmorzwiebeln und Champignons",
+        "category": "Wahlmenü (Komponente mit Fleisch)",
+        "prices": {
+            "students": 1.8,
+            "employees": 3.2,
+            "pupils": null,
+            "others": 3.6
+        },
+        "notes": [
+            "Natürlich frisch",
+            "Schweinefleisch"
+        ]
+    },
+    {
+        "id": 2683055,
+        "name": "Scharfe Gemüsepuffer, Chilisauce",
+        "category": "Wahlmenü (Komponente ohne Fleisch)",
+        "prices": {
+            "students": 1.7,
+            "employees": 2.8,
+            "pupils": null,
+            "others": 3.2
+        },
+        "notes": [
+            "Milch und Milcherzeugnisse",
+            "Eier und Eiererzeugnisse",
+            "Glutenhaltiges Getreide",
+            "mit Knoblauch",
+            "Natürlich frisch",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683056,
+        "name": "Kartoffelpüree",
+        "category": "Wahlmenü (Beilage)",
+        "prices": {
+            "students": 0.6,
+            "employees": 0.9,
+            "pupils": null,
+            "others": 1.1
+        },
+        "notes": [
+            "Milch und Milcherzeugnisse",
+            "Natürlich frisch",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683057,
+        "name": "Kräuter-Bulgur",
+        "category": "Wahlmenü (Beilage)",
+        "prices": {
+            "students": 0.6,
+            "employees": 0.9,
+            "pupils": null,
+            "others": 1.1
+        },
+        "notes": [
+            "Glutenhaltiges Getreide",
+            "vegan",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683058,
+        "name": "Grüne Bohnen",
+        "category": "Wahlmenü (Gemüse)",
+        "prices": {
+            "students": 0.65,
+            "employees": 0.95,
+            "pupils": null,
+            "others": 1.15
+        },
+        "notes": [
+            "Natürlich frisch",
+            "vegan",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683059,
+        "name": "Karottengemüse",
+        "category": "Wahlmenü (Gemüse)",
+        "prices": {
+            "students": 0.65,
+            "employees": 0.95,
+            "pupils": null,
+            "others": 1.15
+        },
+        "notes": [
+            "Natürlich frisch",
+            "vegan",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683060,
+        "name": "Gurkensalat",
+        "category": "Wahlmenü (Salat)",
+        "prices": {
+            "students": 0.6,
+            "employees": 0.9,
+            "pupils": null,
+            "others": 1.1
+        },
+        "notes": [
+            "Natürlich frisch",
+            "vegan",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683061,
+        "name": "Kokos-Tomatensuppe",
+        "category": "Wahlmenü (Suppe)",
+        "prices": {
+            "students": 0.4,
+            "employees": 0.6,
+            "pupils": null,
+            "others": 0.8
+        },
+        "notes": [
+            "Natürlich frisch",
+            "vegan",
+            "ohne Fleisch"
+        ]
+    },
+    {
+        "id": 2683062,
+        "name": "Quarkspeise mit Vanillegeschmack",
+        "category": "Wahlmenü (Dessert)",
+        "prices": {
+            "students": 0.8,
+            "employees": 0.95,
+            "pupils": null,
+            "others": 1.1
+        },
+        "notes": [
+            "Milch und Milcherzeugnisse",
+            "Natürlich frisch",
+            "ohne Fleisch"
+        ]
+    }
+]
