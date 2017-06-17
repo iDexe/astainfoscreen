@@ -43,7 +43,7 @@ function node.render()
     for idx, meal in ipairs(meals) do
     	font:write(20, 80 * (1+idx), meal.name, 32, 1,1,1,1)
     	for idx2, line in ipairs(meal) do
-    		font:write(20, 80 * (1+idx) + idx2 * 32, line, 32, 1,1,1,1)
+    		font:write(40, 80 * (1+idx) + idx2 * 32, line, 32, 1,1,1,1)
     	end
     end
 end
