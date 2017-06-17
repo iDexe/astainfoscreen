@@ -39,7 +39,7 @@ end)
 
 function node.render()
     gl.clear(0,0,0,1)
-    font:write(20, 20, "Mensaplan", 128, 1,1,1,1)
+    font:write(20, 20, "Mensa\nplan", 128, 1,1,1,1)
     for idx, meal in ipairs(meals) do
     	font:write(20, 80 * (1+idx), meal.name, 32, 1,1,1,1)
     	for idx2, line in ipairs(meal) do
