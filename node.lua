@@ -30,6 +30,7 @@ end
 util.file_watch("NextdayMeals.json", function(content)
 	meals = json.decode(content)
 	for idx, meal in ipairs(meals) do
+		meal.lines = wrap(meal.name, 45)
 
 
 	end
