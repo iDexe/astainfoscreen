@@ -37,8 +37,7 @@ function node.render()
     gl.clear(0,0,0,1)
     font:write(20, 20, "Mensaplan", 128, 1,1,1,1)
     for idx, meal in ipairs(meals) do
-    	font:write(20, 96 * (1+idx), meal.name, 32, 1,1,1,1)
-    	idx2 = 1
+    	idx2 = 0
     	for line in meal.name:gmatch("[^\r\n]+") do
     		font:write(20, 96 * (1+idx) + 32 * idx2, line, 32, 1,1,1,1)
     		idx2 = idx2 + 1
