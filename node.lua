@@ -9,18 +9,21 @@ local font = resource.load_font("OpenSans-Regular.ttf")
 
 
 function wrap(str, limit, indent, indent1)
-  indent = indent or ""
-  indent1 = indent1 or indent
-  limit = limit or 72
-  local here = 1-#indent1
-  return indent1..str:gsub("(%s+)()(%S+)()",
-                          function(sp, st, word, fi)
-                            if fi-here > limit then
-                              here = st - #indent
-                              return "\n"..indent..word
-                            end
-                          end)
+    limit = limit or 72
+    local here = 1
+    local wrapped = str:gsub("(%s+)()(%S+)()", function(sp, st, word, fi)
+        if fi-here > limit then
+            here = st
+            return "\n"..word
+        end
+    end)
+    local splitted = {}
+    for token in string.gmatch(wrapped, "[^\n]+") do
+        splitted[#splitted + 1] = token
+    end
+    return splitted
 end
+
 
 
 util.file_watch("NextdayMeals.json", function(content)
@@ -37,6 +40,6 @@ function node.render()
     font:write(20, 20, "Mensaplan", 128, 1,1,1,1)
     for idx, meal in ipairs(meals) do
     	font:write(20, 80 * (1+idx), meal.name, 32, 1,1,1,1)
-    	font:write(20, 80 * (1+idx) + 40, wrap(meal.name, 35), 32, 1,1,1,1)
+    	font:write(20, 80 * (1+idx) + 40, wrap(meal.name,35), 32, 1,1,1,1)
     end
 end
