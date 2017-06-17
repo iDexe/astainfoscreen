@@ -42,7 +42,7 @@ function node.render()
     for idx, meal in ipairs(meals) do
     	for idx2, line in ipairs(meal)
     		vertTextpos = vertTextpos + idx*64 + idx2*64
-    		font:write(20, 64 * vertTextpos, meal.name, 64, 1,1,1,1)
+    		font:write(20, vertTextpos, meal.lines, 64, 1,1,1,1)
     	
     end
 end
